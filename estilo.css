@@ -1,0 +1,53 @@
+header{
+    background: rgb(212, 161, 32);
+    font: normal 30pt Georgia;
+    color: ivory;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+body{
+    background: brown;
+    color: rgb(212, 161, 32);
+    font: normal 16pt Trebuchet;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font: normal 20pt;
+}
+
+section {
+    text-align: center;
+    border-left-width: 20px;
+    border-right-width: 100px;
+}
+div#titulo{
+    font: normal 25pt Georgia;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: underline;
+}
+div#area{
+    width: 350px;
+    height: 350px;
+    line-height: 500px;
+    background: rgb(35, 122, 236);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px black ;
+}
+div#texto{
+    text-align: center;
+    width: 700px;
+    padding-left: 300px;
+    line-height: 1.5;
+}
