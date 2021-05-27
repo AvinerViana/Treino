@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Dolar em Real</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-image: url(https://conteudo.imguol.com.br/c/noticias/6c/2018/11/13/dolar-dolar-cambio-real-estados-unidos-bolsa-de-valores-mercado-bovespa-ibovespa-b3-1542152549651_v2_1920x1280.jpg);
+        background-position: center;
+    }
+    h1 {
+        font: bold 25pt Arial;
+        color: rgb(0, 0, 0);
+        background: orange;
+    }
+    div#conversor{
+        height: 50px;
+        width: 400px;
+        background: yellowgreen;
+        margin: auto;
+        padding: 20px;
+    }
+    div#res{
+        padding: 10px;
+        text-align: center;
+        font: normal 15pt Arial;
+        width: 400px;
+    }
+    image{
+        padding-bottom: 10px;
+    }
+    footer{
+        background: yellowgreen;
+        margin: auto;
+        padding: 20px;
+        height: 50px;
+        width: 400px;
+        font: bold italic 18pt Times;
+
+    }
+</style>
+<body>
+    <h1>Conversor de Dólares</h1>
+    <input type="image" src="dinheiro.png" alt="dinheiro">
+    <br>
+    <br>
+    <div id = "conversor">
+        <input type="number" name="dolar" id="dolar">
+        <input type="button" value="Converter" onclick="calcular()">
+        <div id ="res"></div>
+    </div>
+    <script>
+        function calcular(){
+        var dolarValor = Number(5.26)
+        var valorDolar = document.getElementById("dolar")
+        var valorReal = valorDolar.value * dolarValor
+        var res = document.getElementById('res')
+        res.innerHTML = `O valor US$ ${valorDolar.value} convertido em reais é R$ ${valorReal.toFixed(2)}`
+        }
+    </script>
+    <footer>
+        <p> &copy; ÁvinerViana </p>
+    </footer>
+    
+</body>
+</html>
